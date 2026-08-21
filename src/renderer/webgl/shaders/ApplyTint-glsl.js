@@ -34,6 +34,9 @@ module.exports = [
     '    else if (tintMode == 7.0) {',
     '        color = (1.0 - color) * outTintEffect.bgr + outTint.bgr * color;',
     '    }',
+    '    else if (tintMode == 8.0) {',
+    '        color = color * outTint.bgr + outTintEffect.bgr;',
+    '    }',
     '    return vec4(color * alpha, alpha);',
     '}',
 ].join('\n');

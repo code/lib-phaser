@@ -128,6 +128,7 @@ var Tint = {
      * - Phaser.TintModes.OVERLAY
      * - Phaser.TintModes.HARD_LIGHT
      * - Phaser.TintModes.MULTIPLY_TWO
+     * - Phaser.TintModes.MULTIPLY_ADD
      *
      * Note that in Phaser 3, tint mode and color were set at the same time.
      * In Phaser 4 they are separate settings.

@@ -96,5 +96,18 @@ module.exports = {
      * @const
      * @since 4.2.0
      */
-    MULTIPLY_TWO: 7
+    MULTIPLY_TWO: 7,
+
+    /**
+     * Double color multiply-and-add tint mode.
+     * The tint color is multiplied with the texture color,
+     * then the result is added to the second tint color.
+     * This imitates tinting in Flash.
+     *
+     * @name Phaser.TintModes.MULTIPLY_ADD
+     * @type {number}
+     * @const
+     * @since 4.3.0
+     */
+    MULTIPLY_ADD: 8
 };

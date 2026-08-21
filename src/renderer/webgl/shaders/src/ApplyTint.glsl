@@ -41,6 +41,10 @@ vec4 applyTint(vec4 texture)
         // Multiply with two tints
         color = (1.0 - color) * outTintEffect.bgr + outTint.bgr * color;
     }
+    else if (tintMode == 8.0) {
+        // Multiply-and-add tint
+        color = color * outTint.bgr + outTintEffect.bgr;
+    }
 
     return vec4(color * alpha, alpha);
 }
